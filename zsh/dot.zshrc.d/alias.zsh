@@ -1,6 +1,8 @@
 # check for GNU ls
-LS=ls ; [ `which gls 2> /dev/null` ] && LS=gls
-DIRCOLS=dircolors ; [ `which gdircolors 2> /dev/null` ] && DIRCOLS=gdircolors
+LS=ls
+DIRCOLS=dircolors
+command -v gls > /dev/null 2>&1 && LS=gls
+command -v gdircolors > /dev/null 2>&1 && DIRCOLS=gdircolors
 
 PROMPT_COMMAND='if [ $? -ne 0 ]; then ERROR_FLAG=1; else ERROR_FLAG=; fi'
 if [ "$TERM" != "dumb" ]; then
