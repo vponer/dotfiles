@@ -1,0 +1,20 @@
+[user]
+	name = [Your name]
+	email = [Your email]
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/local/bin/vim
+[push]
+	default = current
+[alias]
+	ci = commit
+	co = checkout
+	cl = clone --recursive
+	st = status
+	glog = log --graph --all
+[color]
+	ui = true
+[branch]
+	autosetuprebase = always
+[http]
+	sslVerify = true

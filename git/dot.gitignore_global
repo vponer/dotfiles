@@ -1,0 +1,10 @@
+*~
+.DS_Store
+.sbt_completion_cache
+*.orig
+*.bak
+.idea
+.idea_modules
+.*.swp
+*.log
+covreport
