@@ -34,19 +34,3 @@ if [ -d ${HOME}/tools/scala ]; then
     fi
 fi
 
-if [ -d ${HOME}/tools/gradle ]; then
-    export GRADLE_HOME=${HOME}/tools/gradle
-    if ! echo ${PATH} | ${GREP} -q ${HOME}/tools/gradle/bin ; then
-        PATH=${HOME}/tools/gradle/bin:${PATH}
-        export PATH
-    fi
-fi
-
-if [ -d ${HOME}/tools/sonarqube ]; then
-    export SONAR_HOME=${HOME}/tools/sonarqube
-    if ! echo ${PATH} | ${GREP} -q ${HOME}/tools/sonarqube/bin ; then
-        PATH=${HOME}/tools/sonarqube/bin:${PATH}
-        export PATH
-    fi
-fi
-
